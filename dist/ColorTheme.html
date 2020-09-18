@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/colorTheme.min.css" />
+  <link rel="icon" type="image/png" href="media/logo-brid-512x512-removebg.png" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <title>Mockup Color Theme </title>
+</head>
+
+<body class="superHero">
+  <!--  Navbar -->
+  <nav>
+    <div class="brand">
+      <img src="media/logo-brid-512x512-removebg.png" alt="" />
+      <p>Aron</p>
+    </div>
+    <!-- ul Menu -->
+    <ul>
+      <li class="nav-mobile-hide">
+        <a href="#theme-palletes" onclick="togglePallete()">Palletes</a>
+      </li>
+      <!-- theme-toggle-->
+      <li class="flex-item nav-item dropdown" id="theme-toggle">
+        <a href="#!"><i class="fas fa-toggle-off fa-lg"></i>Theme</a>
+        <div class="dropdown-content">
+          <p>*Theme*</p>
+          <a href="#!" id="toggle-litera">>Litera</a><br />
+          <a href="#!" id="toggle-darkly">>Darkly</a><br />
+          <a href="#!" id="toggle-cyborg">>Cyborg</a><br />
+          <a href="#!" id="toggle-superHero">>SuperHero</a><br />
+          <a href="#!" id="toggle-pulse">>Pulse</a><br />
+          <p class="divider">*Gradient*</p>
+          <a href="#!" id="toggle-solar">>Solar</a><br>
+          <a href="#!" id="toggle-gradient1">>Gradient1</a><br>
+          <a href="#!" id="toggle-gradient2">>Gradient2</a><br>
+        </div>
+      </li>
+      <li class="nav-mobile-hide">
+        <a href="#">
+          <i class="fas fa-search"></i>
+        </a>
+      </li>
+      <li class="nav-mobile-hide">
+        <a href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Main -->
+  <main class="main-content">
+    <!-- Demo Theme Palletes -->
+    <section id="theme-palletes">
+      <div class="container flexbox-demo">
+        <div class="pallete">
+          <span>Theme Palletes : </span>
+          <span id="isPallete"></span>
+        </div>
+        <div class="theme">
+          <div class="color body-bg">
+            <h5>body-bg</h5>
+          </div>
+          <div class="color text">
+            <h5>text</h5>
+          </div>
+          <div class="color primary">
+            <h5>primary</h5>
+          </div>
+          <div class="color secondary">
+            <h5>secondary</h5>
+          </div>
+          <div class="color success">
+            <h5>success</h5>
+          </div>
+          <div class="color info">
+            <h5>info</h5>
+          </div>
+          <div class="color warning">
+            <h5>warning</h5>
+          </div>
+          <div class="color danger">
+            <h5>danger</h5>
+          </div>
+          <div class="color light">
+            <h5>light</h5>
+          </div>
+          <div class="color dark">
+            <h5>dark</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script defer src="/dist/js/colorTheme.js"></script>
+</body>
+
+</html>
