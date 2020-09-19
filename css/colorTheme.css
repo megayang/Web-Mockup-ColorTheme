@@ -251,6 +251,87 @@ nav a:hover {
   border-bottom: 2px solid var(--danger);
 }
 
+.main-content {
+  margin: 10px 0 20px 0;
+}
+
+.main-content section {
+  padding-top: 30px;
+}
+
+.main-content .pallete {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-content .pallete #isPallete {
+  color: var(--danger);
+}
+
+.main-content .theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--primary);
+}
+
+.main-content .theme .color {
+  height: 100px;
+  width: 10%;
+  flex: auto;
+  text-align: center;
+}
+
+.main-content .theme .body-bg {
+  background: var(--bg);
+  color: var(--gray-400);
+}
+
+.main-content .theme .text {
+  background: var(--text);
+  color: var(--gray-400);
+}
+
+.main-content .theme .primary {
+  background: var(--primary);
+  color: var(--bg);
+}
+
+.main-content .theme .secondary {
+  background: var(--secondary);
+  color: var(--bg);
+}
+
+.main-content .theme .success {
+  background: var(--success);
+  color: var(--bg);
+}
+
+.main-content .theme .info {
+  background: var(--info);
+  color: var(--bg);
+}
+
+.main-content .theme .warning {
+  background: var(--warning);
+  color: var(--bg);
+}
+
+.main-content .theme .danger {
+  background: var(--danger);
+  color: var(--bg);
+}
+
+.main-content .theme .lignt {
+  background: var(--light);
+  color: var(--gray-400);
+}
+
+.main-content .theme .dark {
+  background: var(--dark);
+  color: var(--gray-400);
+}
+
 /* Themes */
 :root {
   --gray-100: #f8f9fa;

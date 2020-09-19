@@ -16,7 +16,6 @@ a {
 }
 
 // Navbar
-
 nav {
   position: sticky;
   display: flex;
@@ -78,6 +77,74 @@ nav {
   }
   a:hover {
     border-bottom: 2px solid var(--danger);
+  }
+}
+
+// Main Content
+.main-content {
+  margin: 10px 0 20px 0;
+  section {
+    padding-top: 30px;
+  }
+  // Demo Theme
+  .pallete {
+    font-size: $font-m;
+    font-weight: 600;
+    #isPallete {
+      color: var(--danger);
+    }
+  }
+  .theme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--primary);
+    .color {
+      height: 100px;
+      width: 10%;
+      flex: auto;
+      text-align: center;
+    }
+    .body-bg {
+      background: var(--bg);
+      color: var(--gray-400);
+    }
+    .text {
+      background: var(--text);
+      color: var(--gray-400);
+    }
+    .primary {
+      background: var(--primary);
+      color: var(--bg);
+    }
+    .secondary {
+      background: var(--secondary);
+      color: var(--bg);
+    }
+    .success {
+      background: var(--success);
+      color: var(--bg);
+    }
+    .info {
+      background: var(--info);
+      color: var(--bg);
+    }
+    .warning {
+      background: var(--warning);
+      color: var(--bg);
+    }
+    .danger {
+      background: var(--danger);
+      color: var(--bg);
+    }
+    .lignt {
+      background: var(--light);
+      color: var(--gray-400);
+    }
+    .dark {
+      background: var(--dark);
+      color: var(--gray-400);
+    }
   }
 }
 /* Themes */

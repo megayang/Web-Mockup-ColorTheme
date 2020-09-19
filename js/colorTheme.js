@@ -11,7 +11,7 @@ const body = document.body;
 const isPallete = document.getElementById("isPallete");
 const theme = localStorage.getItem("theme");
 
-// Toggle Palletes Display
+// Toggle Pallete Display
 document.getElementById("theme-palletes").style.display = "none";
 
 function togglePallete() {
@@ -23,11 +23,15 @@ function togglePallete() {
   }
 }
 
-// Default Theme
+// Default Theme : superHero
 if (theme) {
   body.classList.add(theme);
+  isPallete.innerText = theme;
+
 } else {
-  body.classList.add("darkly");
+  body.classList.add("superHero");
+  isPallete.innerText = "SuperHero";
+  localStorage.setItem("theme", "superHero");
 }
 //  Set Litera Theme
 litera.onclick = () => {
