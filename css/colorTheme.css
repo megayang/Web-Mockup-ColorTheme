@@ -575,9 +575,6 @@ nav a:hover {
   .container {
     max-width: 90vw;
   }
-  .logo {
-    display: none;
-  }
   .showcase {
     height: 400px;
   }
@@ -586,9 +583,6 @@ nav a:hover {
   }
   .showcase-content .title {
     font-size: 40px;
-  }
-  .showcase-content img {
-    display: none;
   }
   .column {
     flex-direction: column;
