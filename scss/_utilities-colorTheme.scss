@@ -1,0 +1,91 @@
+// _utilities.scss :  include container, grid, flexbox, text styles, buttons, alerts, badges, table, overlay.....all kinds of myself-defined components and DisplayLout
+
+// Container
+.container {
+  max-width: $max-width;
+  padding: 0 0px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Create four equal columns */
+.column {
+  flex: 25%;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+// ------Text Styles-------
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.small {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.x-small {
+  font-size: smaller;
+  margin-bottom: 0.2rem;
+}
+.text-primary {
+  color: var(--primary);
+}
+
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
+//Margin & Padding
+$spaceamount: (1, 2, 3, 4, 5);
+@each $space in $spaceamount {
+  // All around margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+  //Vertical margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+  //All areound padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+  //Vertical padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
